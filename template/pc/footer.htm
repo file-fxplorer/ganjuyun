@@ -1,0 +1,47 @@
+<footer>
+  <div class="m-totop">返回顶部</div>
+  <div class="container">
+    <div class="footer-l">
+      <ul>
+        {eyou:channelartlist type='top' row='6'}
+        <li>
+          <dl>
+            <dt> <a href="{eyou:field name='typeurl' /}">{eyou:field name='typename' /}</a> <i class="f-arrow"><img src="{eyou:global name='web_templets_pc' /}/skin/images/f-arrow.png"></i> </dt>
+            <div class="footer-sub-menu"> {eyou:channel type='son'}
+              <dd><a href="{$field.typeurl}">{$field.typename}</a></dd>
+              {/eyou:channel} </div>
+          </dl>
+        </li>
+        {/eyou:channelartlist}
+      </ul>
+    </div>
+    <div class="footer-r">
+      <div class="f-share"> <a class="f-share-one" href="javascript:;"> <img src="{eyou:global name='web_templets_pc' /}/skin/images/f-share-one-1.png">
+        <div class="fs-one-qrcode"><img src="{eyou:global name='web_attr_8' /}"></div>
+        </a> <a class="f-share-one" href="javascript:;"> <img src="{eyou:global name='web_templets_pc' /}/skin/images/f-share-one-1.png">
+        <div class="fs-one-qrcode"><img src="{eyou:global name='web_attr_8' /}"></div>
+        </a><a class="" href="javascript:;">
+        <div class="fs-one-qrcode"></div>
+        </a> </div>
+      <div class="f-belongs">
+        <div class="f-belongs-one">Tel-A：{eyou:global name='web_attr_2' /}</div>
+        <div class="f-belongs-one">Tel-B：{eyou:global name='web_attr_1' /}</div>
+        <div class="f-belongs-one">E-Mail：{eyou:global name='web_attr_4' /}</div>
+        <div class="f-belongs-one">{eyou:global name='web_attr_3' /}</div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <div class="copyright-l">
+        <h2>友情链接：</h2>
+        <ul>
+          {eyou:flink titlelen='20' row='20' type='text'}
+          <li> <a href="{$field.url}" target="_blank">{$field.title}</a> </li>
+          {/eyou:flink}
+        </ul>
+      </div>
+      <div class="copyright-r">{eyou:global name='web_attr_9' /}&nbsp;&nbsp;&nbsp;<span class="cip-r">{eyou:global name='web_recordnum' /}</span></div>
+    </div>
+  </div>
+</footer>

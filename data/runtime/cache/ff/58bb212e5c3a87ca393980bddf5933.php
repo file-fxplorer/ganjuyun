@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+s:715:"<option value="11" data-grade="0" data-current_channel="1">新闻中心</option><option value="12" data-grade="1" data-current_channel="1">&nbsp;&nbsp;&nbsp;&nbsp;公司新闻</option><option value="13" data-grade="1" data-current_channel="1">&nbsp;&nbsp;&nbsp;&nbsp;行业动态</option><option value="14" data-grade="1" data-current_channel="1">&nbsp;&nbsp;&nbsp;&nbsp;技术学堂</option><option value="17" data-grade="0" data-current_channel="6" disabled="true" style="background-color:#f5f5f5;">选择我们的理由</option><option value="20" data-grade="1" data-current_channel="1">&nbsp;&nbsp;&nbsp;&nbsp;专线传输</option><option value="28" data-grade="0" data-current_channel="1">首页幻灯</option>";

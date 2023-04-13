@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="desktop">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no" />
+<title>{$eyou.field.seo_title}</title>
+<meta name="keywords" content="{$eyou.field.seo_keywords}" />
+<meta name="description" content="{$eyou.field.seo_description}" />
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/amfe-flexible.js"></script>
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/bootstrap.min.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/animate.css" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/animation.css" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/common.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/case.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/pace-theme-barber-shop.css" />
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+{eyou:include file='head.htm'/}
+<div class="banner">
+  <picture>
+    <source srcset="{eyou:global name='web_templets_pc' /}/skin/images/banner-case-m.jpg" media="(max-width: 48em)">
+    <img class="img-responsive" srcset="{eyou:global name='web_templets_pc' /}/skin/images/banner.jpg"> </picture>
+  <div class="banner_txt">
+    <div class="DIV">
+      <div class="banner_txt1">所有经典，源于极致追求</div>
+      <div class="banner_txt2">一直向着“做业内一流的互联网设计团队”这一愿景努力，致力于不断提升对网站高端设计，微信公众号/小程序开发等产品的用户体验</div>
+    </div>
+  </div>
+</div>
+<article>
+  <section>
+    <div class="det_describe clearfix">
+      <div class="container">
+        <div class="describe_left describe_con">
+          <div class="describe_tit pull-left">【当前位置】</div>
+          <div class="describe_txt pull-left">{eyou:position style='' /}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="picview-all">
+    <div class="container">
+      <div class="picview-top letmove move">
+        <h4>{$eyou.field.title}</h4>
+      </div>
+    </div>
+  </section>
+  <section class="imgs-show-all" style="margin-top: 0px;">
+    <div class="imgs-show-pc">
+      <div class="container">
+        <div class="imgs-show-one">
+          <div class="imgs-show-one-in"> {$eyou.field.content} </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {eyou:include file='form.htm'/}
+  <div class="bg-shadow"></div>
+</article>
+{eyou:include file='footer.htm'/} 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/bootstrap.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.lazyload.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.scrollup.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/wow.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/main.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/pace.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/index.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/message.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/load.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.easing.min.js"></script> 
+<script>
+	
+
+	$(document).ready(function () {
+		if ($('html').hasClass('desktop')) {
+			new WOW().init();
+		}
+
+		$(window).resize(function() {
+			$(".wechat-list .pic-box").find('.wechat-show').css('bottom','auto');
+		})
+
+		var ww = $(window).width(),
+			wh = $(window).height();
+
+		if(ww>=1200){
+			$(".wechat-list .pic-box").hover(
+				function(){
+					$(this).find(".wechat-show").css('opacity',1);
+					$(this).find(".wechat-show").stop(false,true).animate({"bottom":0},{duration:600,easing:"easeInOutQuart"});
+				},
+				function(){
+					bottom_val = $(this).find('img').height();
+					$(this).find(".wechat-show").stop(false,true).animate({"bottom":bottom_val},{duration:600});
+			});
+		}else{
+			$(".wechat-show").css('opacity',1);
+		}
+		
+	
+	});
+
+
+	
+	</script>
+</body>
+</html>

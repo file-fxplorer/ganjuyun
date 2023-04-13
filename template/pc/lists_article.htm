@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="desktop">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no" />
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/amfe-flexible.js"></script>
+<title>{$eyou.field.seo_title}</title>
+<meta name="keywords" content="{$eyou.field.seo_keywords}" />
+<meta name="description" content="{$eyou.field.seo_description}" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/bootstrap.min.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/reset.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/animate.css" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/animation.css" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/common.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/pace-theme-barber-shop.css" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/news.css">
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+{eyou:include file='head.htm'/}
+<div class="banner">
+  <picture>
+    <source srcset="{eyou:global name='web_templets_pc' /}/skin/images/banner-news-m.jpg" media="(max-width: 48em)">
+    <img class="img-responsive" srcset="{eyou:global name='web_templets_pc' /}/skin/images/banner-news.jpg"> </picture>
+  <div class="banner_txt">
+    <div class="DIV"> {eyou:type typeid='$eyou.field.parent_id' }
+      <div class="banner_txt1">{$field.typename}</div>
+      <div class="banner_txt2">{$field.seo_description}</div>
+      {/eyou:type} </div>
+  </div>
+</div>
+{eyou:include file='wapfoot.htm'/}
+<article>
+  <div class="menu container">
+    <ul>
+      {eyou:channel type="first" id="field2" currentstyle="cur"}
+      <li class="{$field2.currentstyle}">
+        <div><a href="{$field2.typeurl}">{$field2.typename}</a></div>
+        <i></i> </li>
+      {/eyou:channel}
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="line"></div>
+  <div class="news-all">
+    <div class="news-list">
+      <div class="container news-list-in"> {eyou:list pagesize='5'}
+        <div class="news-one">
+          <div class="news-one-date">
+            <p class="day">{$field.add_time|MyDate='d',###}</p>
+            <p class="month">{$field.add_time|MyDate='m',###}</p>
+            <p class="year">{$field.add_time|MyDate='Y',###}</p>
+          </div>
+          <div class="news-one-desc">
+            <div class="news-one-words">
+              <h3><a href="{$field.arcurl}">{$field.title}</a></h3>
+              <p class="words">{$field.seo_description|msubstr=###,0,200/2}...</p>
+            </div>
+            <a href="{$field.arcurl}" class="link"><span class="more">Read&More</span><img src="{eyou:global name='web_templets_pc' /}/skin/images/news-arrow.png"></a> </div>
+        </div>
+        {/eyou:list} </div>
+    </div>
+    <div class="pagination-wrapper">
+      <div class="pagination"> {eyou:pagelist listsize='1' listitem='index,end,pre,next,pageno'/} </div>
+    </div>
+  </div>
+</article>
+{eyou:include file='footer.htm'/} 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/bootstrap.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.lazyload.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.scrollup.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="desktop enhanced-gallery">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no" />
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/amfe-flexible.js"></script>
+<title>{eyou:global name='web_title' /}_{eyou:global name='web_name' /}</title>
+<meta name="description" content="{eyou:global name='web_description' /}" />
+<meta name="keywords" content="{eyou:global name='web_keywords' /}" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/reset.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/bootstrap.min.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/animate.css" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/animation.css" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/main.built.css"/>
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/pace-theme-barber-shop.css"/>
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/common.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/case.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/index.css"/>
+<link href="{eyou:global name='web_ico' /}" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+{eyou:include file='head.htm'/}
+<article class="gallery-container" data-analytics-region="hero">
+  <div id="homepage-gallery" class="gallery with-paddlenav">
+    <nav class="paddlenav paddlenav-framed paddlenav-short paddlenav-circle">
+      <ul>
+        <li class="paddlenav-arrow-container paddlenav-arrow-container-previous">
+          <button class="paddlenav-arrow paddlenav-arrow-previous" aria-label="Previous" data-ac-gallery-previous-trigger="homepage-gallery"><span class="arrow-icon arrow-icon-previous"></span></button>
+        </li>
+        <li class="paddlenav-arrow-container paddlenav-arrow-container-next">
+          <button class="paddlenav-arrow paddlenav-arrow-next" aria-label="Next" data-ac-gallery-next-trigger="homepage-gallery"><span class="arrow-icon arrow-icon-next"></span></button>
+        </li>
+      </ul>
+    </nav>
+    <nav class="dashnav dot-nav">
+      <ul role="tablist">
+        <li role="presentation"><a href="#homepage-gallery-iphone" data-ac-gallery-trigger="homepage-gallery-iphone" class="dashnav-item">
+          <div class="dashnav-dash"> <span class="dashnav-progress"></span> </div>
+          </a> </li>
+        <li role="presentation"><a href="#homepage-gallery-madeincny" data-ac-gallery-trigger="homepage-gallery-madeincny" class="dashnav-item current">
+          <div class="dashnav-dash"> <span class="dashnav-progress"></span> </div>
+          </a> </li>
+        <li role="presentation"><a href="#homepage-gallery-watch" data-ac-gallery-trigger="homepage-gallery-watch" class="dashnav-item">
+          <div class="dashnav-dash"> <span class="dashnav-progress"></span> </div>
+          </a> </li>
+        <li role="presentation"><a href="#homepage-gallery-macbookpro" data-ac-gallery-trigger="homepage-gallery-macbookpro" class="dashnav-item current">
+          <div class="dashnav-dash"> <span class="dashnav-progress"></span> </div>
+          </a></li>
+      </ul>
+    </nav>
+    <div class="gallery-slide-wrapper"> {eyou:arclist typeid='28' limit='0,1' titlelen='50' orderby='pubdate'} <a href="javascript:;" id="homepage-gallery-iphone" class="block gallery-item gallery-item-static gallery-item-iphone-alt gallery-item-dark" data-ac-gallery-item aria-label="iPhone. This is 7.">
+      <div class="gallery-item-content">
+        <div class="gallery-item-lockup-wrapper">
+          <h1 class="homepage-headline" aria-hidden="true">{$field.title}</h1>
+          <p class="intro"> {$field.seo_description} </p>
+        </div>
+      </div>
+      <figure class="gallery-image gallery-image-iphone-alt" style="background-image: url({$field.litpic});"></figure>
+      <picture>
+        <source srcset="{$field.litpic}" media="(max-width: 48em)">
+        <img class="img-responsive" srcset="{eyou:global name='web_templets_pc' /}/skin/images/null.png"> </picture>
+      </a> {/eyou:arclist}
+      
+      {eyou:arclist typeid='28' limit='1,2' titlelen='50' orderby='pubdate'} <a href="javascript:;" id="homepage-gallery-madeincny" class="block gallery-item gallery-item-static gallery-item-madeincny gallery-item-dark" data-ac-gallery-item aria-label="Made in CNY">
+      <div class="gallery-item-content">
+        <div class="gallery-item-lockup-wrapper">
+          <h1 class="homepage-headline" aria-hidden="true">{$field.title}</h1>
+          <p class="intro"> {$field.seo_description} </p>
+        </div>
+      </div>
+      <figure class="gallery-image gallery-image-madeincny" style="background-image: url({$field.litpic});"></figure>
+      <picture>
+        <source srcset="{$field.litpic}" media="(max-width: 48em)">
+        <img class="img-responsive" srcset="{eyou:global name='web_templets_pc' /}/skin/images/null.png"> </picture>
+      </a> {/eyou:arclist}
+      {eyou:arclist typeid='28' limit='2,3' titlelen='50' orderby='pubdate'} <a href="javascript:;" id="homepage-gallery-watch" class="block gallery-item gallery-item-watch gallery-item-dark" data-ac-gallery-item aria-label="Apple Watch Series 2. Introducing Series 2.">
+      <div class="gallery-item-content">
+        <div class="gallery-item-lockup-wrapper">
+          <h1 class="homepage-headline" aria-hidden="true">{$field.title}</h1>
+          <p class="intro"> {$field.seo_description} </p>
+        </div>
+      </div>
+      <figure class="gallery-image gallery-image-watch-alt" style="background-image: url({$field.litpic});"></figure>
+      <picture>
+        <source srcset="{$field.litpic}" media="(max-width: 48em)">
+        <img class="img-responsive" srcset="{eyou:global name='web_templets_pc' /}/skin/images/null.png"> </picture>
+      </a> {/eyou:arclist}  
+      {eyou:arclist typeid='28' limit='3,4' titlelen='50' orderby='pubdate'} <a href="javascript:;" id="homepage-gallery-macbookpro" class="block gallery-item gallery-item-macbookpro gallery-item-dark" data-ac-gallery-item aria-label="MacBook Pro. A touch of genius.">
+      <div class="gallery-item-content">
+        <div class="gallery-item-lockup-wrapper">
+          <h1 class="homepage-headline" aria-hidden="true">{$field.title}</h1>
+          <p class="intro"> {$field.seo_description} </p>
+        </div>
+      </div>
+      <figure class="gallery-image gallery-image-macbookpro" style="background-image: url({$field.litpic});"></figure>
+      <picture>
+        <source srcset="{$field.litpic}" media="(max-width: 48em)">
+        <img class="img-responsive" srcset="{eyou:global name='web_templets_pc' /}/skin/images/null.png"> </picture>
+      </a> {/eyou:arclist} </div>
+  </div>
+</article>
+<div class="business_section">
+  <div class="container">
+    <div class="business_warp"> {eyou:type typeid='17'}
+      <div class="menu_tit1 wow fadeInUp4" data-wow-duration="1.2s" data-wow-delay=".1s">{$field.typename}</div>
+      <div class="menu_tit2 wow fadeInUp5" data-wow-duration="1.2s" data-wow-delay=".35s">{$field.seo_description}</div>
+      {/eyou:type}
+      <div class="business_list">
+        <ul class="row shadow-grid p-h-s m-v-l">
+          {eyou:channel type='son' typeid='17'}
+          <li class="col-lg-3 col-md-6 col-sm-6 col-xs-12 wow fadeInUp3" data-wow-duration="1.7s" data-wow-delay=".2s"> <a href="javascript:void(0)" class="p-s">
+            <!--<div class="business_icon">
+              <div class="red-bak"></div>
+              <span class="icon icon{$i}"></span> </div>-->
+            <div class="business_txt cur">
+              <h2><b>{$field.typename}</b></h2>
+              <p class="h5">{$field.seo_description}</p>
+            </div>
+            </a> </li>
+          {/eyou:channel}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="counters">
+  <div class="counter_con">
+    <div class="con-tit con-tit2">
+      <div class="tit_txt1 wow fadeInUp4" data-wow-duration="1.2s" data-wow-delay=".1s">3年时间&nbsp;&nbsp;<span class="br-m">80位同事&nbsp;&nbsp;</span><span class="br-m">1000个日夜</span></div>
+      <div class="tit_txt2 wow fadeInUp5" data-wow-duration="1.2s" data-wow-delay=".4s">我们拥有一支经验丰富、眼光独到、自信尽职、专业创新的团队，凭着多年的实践经验，一直坚持高水准的服务标准。我们在为您做的，不仅仅是一次服务，而是与您一起，缔造一个属于您的隐匿网络</div>
+    </div>
+  </div>
+  <div class="full_section_inner">
+    <div class="counter_list  clearfix">
+      <ul class="row">
+        <li class="col-md-2 col-sm-2 col-xs-4">
+          <div class="q_counter_holder wow fadeIn" data-wow-duration="1s" data-wow-delay=".1s"> <span class="counter counter1" id="count-number" data-to="560" data-speed="1000">0</span>&nbsp;<span class="unit">位</span>
+            <p class="counter_text">500+客户信赖之选</p>
+          </div>
+        </li>
+        <li class="col-md-2 col-sm-2 col-xs-4">
+          <div class="q_counter_holder wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s"> <span class="counter counter2" id="count-number" data-to="100" data-speed="1500">0</span>&nbsp;<span class="unit">家</span>
+            <p class="counter_text">100+服务商支持</p>
+          </div>
+        </li>
+        <li class="col-md-2 col-sm-2 col-xs-4">
+          <div class="q_counter_holder wow fadeIn" data-wow-duration="1s" data-wow-delay=".9s"> <span class="counter counter3" id="count-number" data-from="2000" data-to="300" data-speed="2000">0</span>&nbsp;<span class="unit">个</span>
+            <p class="counter_text">300+节点使用</p>
+          </div>
+        </li>
+        <li class="col-md-2 col-sm-2 col-xs-4">
+          <div class="q_counter_holder wow fadeIn" data-wow-duration="1s" data-wow-delay="1.3s"> <span class="counter">0</span><span class="counter counter4" id="count-number" data-to="3" data-speed="2500">0</span>&nbsp;<span class="unit">年</span>
+            <p class="counter_text">时间的专注和沉淀</p>
+          </div>
+        </li>
+        <li class="col-md-2 col-sm-2 col-xs-4">
+          <div class="q_counter_holder wow fadeIn" data-wow-duration="1s" data-wow-delay="1.7s"> <span class="counter counter5" id="count-number" data-to="97" data-speed="3000">0</span>&nbsp;<span class="unit">%</span>
+            <p class="counter_text">以上的客户满意度</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="box-shadow"></div>
+  <!--背景视频-->
+  <video loop poster="{eyou:global name='web_templets_pc' /}/skin/images/propaganda.jpg" id="bgvid" class="bg_video">
+    <source src="{eyou:global name='web_templets_pc' /}/skin/images/propaganda.mp4" type="video/mp4">
+  </video>
+</div>
+<div class="product">
+  <!--<div class="product_txt container"> {eyou:type typeid='5'}
+    <div class="product_txt1 wow fadeInUp4" data-wow-duration="1.2s" data-wow-delay=".1s">{$field.typename}<span class="br-m"></span></div>
+    <div class="product_txt2 wow fadeInUp5" data-wow-duration="1.2s" data-wow-delay=".35s">{$field.seo_description}</div>
+    {/eyou:type} </div>-->
+  <!--<div class="case_list container">
+    <ul class="row">
+      {eyou:arclist typeid='5' row='6' titlelen='50' orderby='add_time'}
+      <li class="col-xs-6 col-sm-4 col-md-4 col-lg-4"> <a href="{$field.arcurl}">
+        <div class="case_img hover-shadow"> <img src="{eyou:global name='web_templets_pc' /}/skin/images/loading.gif" data-original="{$field.litpic}" class="img-responsive lazy"/>
+          <div class="case_cover"></div>
+        </div>
+        </a>
+        <div class="case_txt">
+          <div class="case-left case_name">{$field.title}</div>
+          <div class="case-right category">类别：{$field.typename}</div>
+          <div class="clearfix"></div>
+        </div>
+      </li>
+      {/eyou:arclist}
+    </ul>
+    {eyou:type typeid='5'} <a href="{$field.typeurl}" class="more_button"> <i></i>
+    <div class="dot1"><span>•</span><span>•</span><span>•</span></div>
+    <div class="dot2"><span>•</span><span>•</span><span>•</span></div>
+    </a>{/eyou:type} </div>-->
+</div>
+<div class="line"></div>
+<!--<div class="container demand grey-m">
+  <div class="demand_txt">
+    <div class="demand_txt1 wow fadeInUp4" data-wow-duration="1.2s" data-wow-delay=".1s">他们成就了我们，我们为他们创造价值</div>
+    <div class="demand_txt2 wow fadeInUp5" data-wow-duration="1.2s" data-wow-delay=".35s">最终我们成为了朋友，为朋友做事，我们两肋插刀</div>
+    <div class="demand-m">
+      <p class="p-1">他们成就了我们</p>
+      <p class="p-1">我们为他们创造价值</p>
+    </div>
+  </div>
+  <div class="demand_con">
+    <div class="row">
+      <div class="demand_left col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="demand-logo-list">
+          <div class="demand-logo-one">
+            <div class="demand-logo-one-img demand-logo-one-img-1 letmove"><img src="{eyou:global name='web_templets_pc' /}/skin/images/demand-logo-one-img-1.jpg"></div>
+            <div class="demand-logo-one-desc demand-logo-one-desc-1 letmove"><img src="{eyou:global name='web_templets_pc' /}/skin/images/demand-logo-one-desc-1.jpg"></div>
+          </div>
+          <div class="demand-logo-one">
+            <div class="demand-logo-one-img demand-logo-one-img-2 letmove"><img src="{eyou:global name='web_templets_pc' /}/skin/images/demand-logo-one-img-2.jpg"></div>
+            <div class="demand-logo-one-desc demand-logo-one-desc-2 letmove"><img src="{eyou:global name='web_templets_pc' /}/skin/images/demand-logo-one-desc-2.jpg"></div>
+          </div>
+          <div class="demand-logo-one">
+            <div class="demand-logo-one-desc demand-logo-one-desc-3 letmove"><img src="{eyou:global name='web_templets_pc' /}/skin/images/demand-logo-one-desc-3.jpg"></div>
+            <div class="demand-logo-one-img demand-logo-one-img-3 letmove"><img src="{eyou:global name='web_templets_pc' /}/skin/images/demand-logo-one-img-3.jpg"></div>
+          </div>
+          <div class="demand-logo-one">
+            <div class="demand-logo-one-desc demand-logo-one-desc-4 letmove"><img src="{eyou:global name='web_templets_pc' /}/skin/images/demand-logo-one-desc-4.jpg"></div>
+            <div class="demand-logo-one-img demand-logo-one-img-4 letmove"><img src="{eyou:global name='web_templets_pc' /}/skin/images/demand-logo-one-img-4.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="demand_right col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="demand_warp">
+          <div class="demand_reminder">朋友，请填写您的需求提交给我们</div>
+          {eyou:guestbookform type='default' typeid='27'}
+          <form class="demand_form" method="POST" {$field.formhidden} action="{$field.action}"  onsubmit="{$field.submit}">
+            <div class="row">
+              <div class="demand_ipt col-sm-6 col-md-6 col-lg-6">
+                <input type="text" name='{$field.attr_1}' id="name" class="form-control" placeholder="称呼姓名"/>
+              </div>
+              <div class="demand_ipt col-sm-6 col-md-6 col-lg-6">
+                <input type="text" name="{$field.attr_2}" id="tel" class="form-control" placeholder="联系电话"/>
+              </div>
+            </div>
+            <div class="demand_ipt">
+              <textarea maxLength="1000" name='{$field.attr_3}' id="content" class="form-control" placeholder="描述您的需求，如网站、微信、H5页面、电商等"></textarea>
+            </div>
+            <div class="send btn-circle">
+              <input type="submit" name="submit" value="提交项目需求"/>
+              <i class="btn-circle-hover"></i></i><i class="btn-circle-click"></i></div>
+            <div class="demand-m">
+              <p class="p-2">*请认真填写需求信息，我们会在24小时内与您取得联系。</p>
+            </div>
+            {$field.hidden}
+          </form>
+          {/eyou:guestbookform} </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+<br />
+<div class="index-news container letmove">
+  <div class="index-news-list-all"> {eyou:channelartlist typeid='11'}
+    {eyou:channel type="son"}
+    <div class="index-news-list">
+      <h3>{$field.typename}</h3>
+      {eyou:arclist typeid='$field.typeid' row='3' titlelen='50' orderby='add_time'}
+      <div class="index-news-one"><a class="inews-one-l" href="{$field.arcurl}">{$field.title}</a> <span class="inews-one-r">[{$field.add_time|MyDate='Y-m-d',###}]</span> </div>
+      {/eyou:arclist} </div>
+    {/eyou:channel}
+    {/eyou:channelartlist} </div>
+  {eyou:type typeid='11'} <a href="{$field.typeurl}" class="more_button"> <i></i>
+  <div class="dot1"><span>•</span><span>•</span><span>•</span></div>
+  <div class="dot2"><span>•</span><span>•</span><span>•</span></div>
+  </a>{/eyou:type} </div>
+{eyou:include file='footer.htm'/} 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/bootstrap.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.lazyload.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery.scrollup.min.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/wow.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/main.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/pace.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/index.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/head.built.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/main.built.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/count.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/message.js"></script> 
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/load.js"></script> 
+<script> $(document).ready(function () {if ($('html').hasClass('desktop')) {new WOW().init(); } }); </script>
+</body>
+</html>
